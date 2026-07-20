@@ -1,0 +1,16 @@
+{
+  "id":"carmen",
+  "title":"卡门",
+  "latinTitle":"CARMEN",
+  "subtitle":"比才 · 三幕歌剧",
+  "description":"塞维利亚的欲望、自由与宿命，在红绒幕间展开。",
+  "entry":"../programme/carmen/index.html",
+  "accent":"#bd2940",
+  "initialSet":"plaza",
+  "defaultLanguage":"zh",
+  "languages":[
+    {"id":"zh","label":"中文"},
+    {"id":"es","label":"西班牙语"},
+    {"id":"zh-es","label":"中西双语"}
+  ]
+}

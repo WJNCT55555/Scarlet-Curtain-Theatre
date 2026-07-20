@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "none",
+    "lib": ["ES2017", "DOM"],
+    "strict": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "outDir": "js",
+    "sourceMap": false
+  },
+  "files": [
+    "../../shared/types/production-globals.d.ts",
+    "src/gfx.ts",
+    "src/sets.ts"
+  ]
+}

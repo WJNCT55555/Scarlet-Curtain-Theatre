@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>绯幕剧场 · RUBY CURTAIN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="home">
+<header class="app-header">
+  <button id="homeButton" class="icon-button home-button" type="button" aria-label="返回剧目首页" title="返回剧目首页">←</button>
+  <a class="brand" href="#" id="brandLink" aria-label="绯幕剧场首页"><span class="brand-mark"><i></i><i></i></span><span><b>绯幕剧场</b><small>RUBY CURTAIN · POCKET REPERTORY</small></span></a>
+  <div class="app-status" aria-live="polite"><span id="statusDot"></span><span id="statusText">剧目厅</span></div>
+</header>
+
+<main>
+  <section id="homeView" class="home-view" aria-labelledby="homeTitle">
+    <div class="home-heading"><p>SEASON 01</p><h1 id="homeTitle">今夜剧目</h1><span id="productionCount"></span></div>
+    <div id="productionGrid" class="production-grid" aria-live="polite"></div>
+  </section>
+
+  <section id="playerView" class="player-view" aria-label="剧场演出">
+    <div class="production-heading"><div><p id="playerLatinTitle"></p><h2 id="playerTitle"></h2></div><span id="playerSubtitle"></span></div>
+    <div class="stage-area"><iframe id="theatreFrame" title="绯幕剧场演出画面" allow="autoplay" src="about:blank"></iframe></div>
+    <div class="control-deck">
+      <div class="timeline-row">
+        <span id="timelineState">等待开演</span>
+        <input id="progressSlider" type="range" min="0" max="1000" value="0" tabindex="-1" aria-label="演出进度" aria-readonly="true">
+        <strong id="progressPercent">0%</strong>
+        <button id="reloadButton" class="icon-button" type="button" aria-label="重新装台" title="重新装台">↻</button>
+      </div>
+      <div class="option-row">
+        <fieldset><legend>永久剧场外壳</legend><div id="shellSelector" class="segments"></div></fieldset>
+        <fieldset><legend>字幕语言</legend><div id="languageSelector" class="segments"></div></fieldset>
+      </div>
+    </div>
+  </section>
+</main>
+
+<template id="productionTemplate">
+  <article class="production-item"><div class="production-preview"><iframe tabindex="-1" aria-hidden="true"></iframe><span class="preview-shade"></span></div><div class="production-info"><div><p class="production-latin"></p><h2 class="production-title"></h2><span class="production-subtitle"></span></div><p class="production-description"></p><button class="enter-button" type="button">进入剧场 <span aria-hidden="true">→</span></button></div></article>
+</template>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target":"ES2017",
+    "module":"none",
+    "lib":["ES2017","DOM"],
+    "strict":true,
+    "noImplicitAny":false,
+    "noEmitOnError":true,
+    "outDir":"js"
+  },
+  "files":["src/runtime.d.ts","src/core.ts","src/theater.ts","src/actors.ts","src/theatre-shell.ts","src/main.ts"]
+}

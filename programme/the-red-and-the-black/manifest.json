@@ -1,0 +1,16 @@
+{
+  "id":"redblack",
+  "title":"摇滚红与黑",
+  "latinTitle":"LE ROUGE ET LE NOIR",
+  "subtitle":"司汤达 · 三章摇滚叙事诗",
+  "description":"野心撞上阶级的铁墙，红与黑在电吉他的回声中交锋。",
+  "entry":"../programme/the-red-and-the-black/index.html",
+  "accent":"#de2644",
+  "initialSet":"mill",
+  "defaultLanguage":"zh",
+  "languages":[
+    {"id":"zh","label":"中文"},
+    {"id":"fr","label":"法语"},
+    {"id":"zh-fr","label":"中法双语"}
+  ]
+}

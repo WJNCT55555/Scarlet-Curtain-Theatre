@@ -1,0 +1,18 @@
+{
+  "name": "scarlet-curtain-theatre",
+  "description": "A browser-based NDS-aesthetic pocket theatre repertory.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build:shared": "tsc -p \"shared/tsconfig.json\"",
+    "build:carmen": "tsc -p \"programme/carmen/tsconfig.json\"",
+    "build:redblack": "tsc -p \"programme/the-red-and-the-black/tsconfig.json\"",
+    "build:lobby": "tsc -p \"theatre-lobby/tsconfig.json\"",
+    "build": "node scripts/run-typescript.mjs build",
+    "typecheck": "node scripts/run-typescript.mjs check",
+    "serve": "node serve.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
